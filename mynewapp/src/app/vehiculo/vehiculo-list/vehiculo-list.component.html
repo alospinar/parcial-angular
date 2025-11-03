@@ -3,6 +3,7 @@
   <table class="table table-striped">
     <thead class="table-dark">
       <tr>
+        <th>#</th>
         <th>Marca</th>
         <th>Línea</th>
         <th>Modelo</th>
@@ -10,6 +11,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let vehiculo of vehiculos">
+        <td>{{vehiculo.id}}</td>
         <td>{{ vehiculo.marca }}</td>
         <td>{{ vehiculo.linea }}</td>
         <td>{{ vehiculo.modelo }}</td>
